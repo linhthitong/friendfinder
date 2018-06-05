@@ -5,6 +5,8 @@
 // ===============================================================================
 
 var friends = require("../data/friends");
+console.log(friends)
+console.log(friends.tableFriends)
 // var waitListData = require("../data/waitinglistData");
 
 
@@ -20,12 +22,10 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/survey", function(req, res) {
-    res.json(survey);
+    res.json(friends);
   });
 
-//   app.get("/api/waitlist", function(req, res) {
-    // res.json(waitListData);
-//   });
+  
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
@@ -36,13 +36,25 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.post("/api/survey", function(req, res) {
+
+    console.log(req.body)
+
+    res.send("data received")
+
+
+
+
+
+
+
+
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
-    if (survey.length < 10) {
-      survey.push(req.body);
-      res.json(true);
-    }
+    // if (survey.length < 10) {
+    //   survey.push(req.body);
+    //   res.json(true);
+    // }
     // else {
     //   waitListData.push(req.body);
     //   res.json(false);
