@@ -7,10 +7,14 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
-
+<style>
+  img {
+    max-width: 100%;
+  }
+</style>
 </head>
 
 <body>
@@ -29,9 +33,75 @@
     <h3>
       <strong>Question 1</strong>
     </h3>
-    <h4>Testing again.</h4>
+    <h4>You are spontaneous.</h4>
     <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>You like to laugh a lot.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+ 
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
+    <h4>You are more analytical than creative.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>You prefer to cook healthy meals at home than to eat out.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
+    <h4>You are an animal lover.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
+    <h4>You would rather watch baseball over football.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -40,169 +110,103 @@
     </select>
 
 
-    <!-- <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"> -->
-    <!-- <a class="chosen-single chosen-default">
-        <span>Select an Option</span>
-        <div>
-          <b></b>
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
+    <h4>You like to ski during the winter.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
+    <h4>You like to eat good food regardless what time it is.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
+    <h4>Rainy and cloudy weather make you feel sad.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
+    <h4>You would prefer to have a dog over a cat.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px;">
+      <option disabled selected></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary btn-md btn-block" id="submit">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+
+     
+     <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
         </div>
-        </a>
-        <div class="chosen-drop">
-          <div class="chosen-search"><input type="text" autocomplete="off"></div>
-          <ul class="chosen-results"></ul>
-        </div>
-      </div> -->
+      </div>
 
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <!-- <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen">
-        <a class="chosen-single chosen-default">
-        <span>Select an Option</span>
-        <div>
-          <b></b>
-        </div>
-        </a>
-        <div class="chosen-drop">
-          <div class="chosen-search"><input type="text" autocomplete="off"></div>
-          <ul class="chosen-results"></ul>
-        </div>
-      </div> -->
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>You like to laugh a.</h4>
-    <select class="chosen-select" id="q1" style="width: 200px;">
-      <option disabled selected>test</option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <button type="button" id="submit">button test</button>
-
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script> 
 
-      $("#submit").on("click", function () {
-        console.log($(".chosen-select"))
+    // Get values of all of the questions with chosen-select class      
+     $("#submit").on("click", function () {
+      console.log($(".chosen-select"))
 
-        var userInputArray = $(".chosen-select")
-        var userScores = []
+      var userInputArray = $(".chosen-select")
+      var userScores = []
 
+      
 
+      // iterate through 10 questions and valid to make sure all questions were answered
         for (var i = 0; i < userInputArray.length; i++) {
-
-          // userScores.push(userInputArray[i].value)
-
-          if (userInputArray[i].value === "test") {
+        // userScores.push(userInputArray[i].value)
+          if (userInputArray[i].value === "check") {
 
             console.log("Invalid selection");
           } else {
@@ -218,16 +222,32 @@
         console.log("send data to back end with AJAX") 
         var userObject = {
           scores:userScores,
-          name: $("#name").val(),
-          photo: $("#photo").val(), 
+          name: $("#name").val().trim(),
+          photo: $("#photo").val().trim(), 
 
         }
-        console.log(userObject)
 
+         console.log(userObject)
+        
+        // Post the user score's result to the server
         $.post("/api/survey",userObject).then(function (data) {
-          console.log(data)
+          console.log(data);
 
-        })
+          $(".modal-body").empty();
+          var matchName = $("<h3>").text(data.name);
+          var matchPhoto = $("<img>").attr("src", data.photo).attr("alt", "match image");
+
+          $(".modal-body").append(matchName, matchPhoto);
+
+          $("#modal").modal("show");
+
+
+          // 
+          $(".chosen-select").each(function(){
+            $(this).val("");
+          });
+          $("#name, #photo").val("");
+        });
 
 
 
